@@ -12,6 +12,9 @@ class Navbar extends Component {
           <li>
             <Link to="/profile">Profile</Link>
           </li>
+          <li>
+            <Link to="/users">Users</Link>
+          </li>
           <li />
         </ul>
       </div>
