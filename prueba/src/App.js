@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import HomePage from "./components/home/HomePage";
-import UserProfile from "./components/userprofile/UserProfile";
+import Routes from "./Routes";
+import Navbar from "./components/Navbar";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <HomePage />
-        <UserProfile />
+        <Navbar />
+        <Routes />
       </div>
     );
   }
