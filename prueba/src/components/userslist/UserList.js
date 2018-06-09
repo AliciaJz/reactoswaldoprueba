@@ -6,22 +6,22 @@ class UsersList extends Component {
       {
         id: 1,
         name: "Deb",
-        hobbie: "Star Wars"
+        hobby: "Star Wars"
       },
       {
         id: 2,
         name: "Gabo",
-        hobbie: "Dragon Ball"
+        hobby: "Dragon Ball"
       },
       {
         id: 3,
         name: "Aliz",
-        hobbie: "Buffy the Vampire Slayer"
+        hobby: "Buffy the Vampire Slayer"
       }
     ],
     newUser: {
       name: "",
-      hobbie: ""
+      hobby: ""
     }
   };
 
@@ -54,8 +54,8 @@ class UsersList extends Component {
             />
             <input
               type="text"
-              name="hobbie"
-              placeholder="hobbie"
+              name="hobby"
+              placeholder="hobby"
               onChange={this.handleText}
             />
             <button type="submit">Save</button>
@@ -63,7 +63,7 @@ class UsersList extends Component {
         </div>
         {users.map((u, key) => (
           <div key={key}>
-            {u.name} likes {u.hobbie}
+            {u.name} likes {u.hobby}
           </div>
         ))}
       </div>
